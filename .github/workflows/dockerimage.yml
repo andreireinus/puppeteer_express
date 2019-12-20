@@ -19,5 +19,4 @@ jobs:
         USERNAME: ${{ secrets.DOCKER_USERNAME }}
         PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         IMAGE_NAME: "andreireinus/pdf-generator"
-        TAG_NAME: "$(date +%s)"
         LATEST: "false"
