@@ -18,6 +18,11 @@ if (auth.login) {
             return next();
         }
 
+        console.warn({
+            expected: auth,
+            provided: {login, password}
+        });
+
         res.status(401).send({'status': 'Unauthorized'});
     });
 }
