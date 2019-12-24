@@ -18,12 +18,12 @@ if (auth.login) {
             return next();
         }
 
-        res.status(401).send({});
+        res.status(401).send({'status': 'Unauthorized'});
     });
 }
 
 app.get('/health', (req, res) => {
-    res.status(200).send({});
+    res.status(200).send({'status': 'Healthy'});
 });
 
 
